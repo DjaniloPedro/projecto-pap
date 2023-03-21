@@ -1,0 +1,85 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f0f0f0;
+}
+
+.caixa-top{
+    top:0;
+    left: 0;
+    padding: 0;
+    height: 140px;
+    background: white;
+    box-shadow: 0px 0px 15px #0000FF;
+
+}
+.caixa-top .logo{
+    width: 150px;
+    text-align: center;    
+}
+.caixa-top .logo .imgwh{
+    width: 50px;
+    padding-top: 5px;
+}
+.caixa-top .logo .title{
+    font-size: 12px;
+}
+.caixa-top .sub{
+    display: flex;
+    justify-content: right;
+    margin-top: -52px;
+    padding: 20px;
+}
+.caixa-top .sub .enderec{
+    display: flex;
+    margin-right: 25px;
+}
+.caixa-top .sub .enderec p{
+    margin-top: 0px;
+
+}
+.caixa-top .sub .enderec .icon{
+    font-size: 24px;
+    
+}
+.caixa-top .sub .menu .icon{
+    font-size: 35px;
+    margin-top: -6px;
+}
+.caixa-top .caixa-menu{
+    padding: 1px;
+    font-size: 17px;
+    margin-top: -23px;
+    margin-left: -40px;
+}
+.caixa-top .caixa-menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.caixa-top .caixa-menu ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+.caixa-top .caixa-menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.caixa-top .caixa-menu ul li.li-menu3 a{
+    color: #0000ff;
+    border-bottom: solid 2px #0000FF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.caixa-top .caixa-menu ul li a:hover{
+    text-decoration: none;
+    color: #0000ff;
+    border-bottom: solid 2px #0000FF;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+
+}

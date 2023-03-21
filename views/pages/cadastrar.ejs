@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cadastrar usuários</title>
+    <link rel="stylesheet" href="css/cadastrar_css.css">
+</head>
+<body>
+   
+    
+    <form class="form" method="post" action="/cadastrar">
+
+        <div class="card">
+
+            <div class="card-top">
+                <img class="imgwh" src="images/itel.png">
+                <h2 class="title">Orientador Academico</h2>
+                <% if (error) { %>
+
+                    <h2 class="title" style="color:rgb(212, 51, 51)" >  <%= error %> </h2>
+                    
+                <% } %>
+
+                <% if (message) { %>
+
+                    <h2 class="title" style="color:rgb(33, 155, 33)" >  <%= message %> </h2>
+                    
+                <% } %>
+                
+            </div>
+            
+           
+            <div class="card-group">
+               <input type="text" name="username" id="" required placeholder="Utilizador...">
+            </div>
+
+            <div class="card-group">
+                <input type="email" name="email" placeholder="Email...">
+            </div>
+            
+            <div class="card-group">
+                <input type="tel" name="phone_number" placeholder="Exemplo: +244 924 000 000" required>
+            </div>
+
+            <div class="card-group">
+                <input type="password" name="password" placeholder="Senha..." required>
+            </div>
+
+            <div class="card-group">
+                <input type="submit" value="cadastrar" class="bt_entrar">
+            </div><br>	
+
+            <div class="card-group btn">
+            <label class="clica_aqui">Já estou cadastrado,<a href="/login" class="clica_aqui">clica aqui!</a></label> <br><br><br>
+
+    </form><br><br>
+
+</body>
+</html> 
+
+    

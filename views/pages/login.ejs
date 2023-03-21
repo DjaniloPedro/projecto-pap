@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+        
+    
+    <form class="form" method="post" action="/login">
+
+        <div class="card">
+
+            <div class="card-top">
+                <img class="imgwh" src="images/itel.png">
+                <h2 class="title">Orientador Academico</h2>
+                 
+                <% if (error) { %>
+
+                    <h2 class="title" style="color:rgb(212, 51, 51)" >  <%= error %> </h2>
+                    
+                <% } %>
+
+            </div>
+            
+            
+            </p>
+            <div class="card-group">
+                <input type="email" name="email" placeholder="Email..." required>
+            </div>
+
+            <div class="card-group">
+                <input type="password" name="password" placeholder="Senha..." required>
+            </div>
+
+            <div class="card-group">
+                <input type="submit" value="  Iniciar  " name="submit" class="bt_entrar">
+            </div><br>	
+
+            <div class="card-group btn">
+            <label class="clica_aqui">Ainda não cadastraste?<a href="/cadastrar" class="clica_aqui">clica aqui!</a></label> <br><br><br>
+
+    </form>
+</body>
+</html> 
