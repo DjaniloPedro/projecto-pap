@@ -110,7 +110,7 @@ route.post('/testPerfile', virifyToken,(req: Request, res: Response) => {
       if (p1 == 0 || p2 == 0 || p3 == 0 || p4 == 1 || p5 == 0) {
     
         res.render('pages/testPerfile', { 
-            content: `Tens Perfile para seguintes cursos Jornalismo,Literatura,Educação `
+            content: `Tens Perfile para seguintes cursos Jornalismo,Literatura,Educação,Publicidade, Psicologia `
         }) 
 
       }else if(p1 == 3 ||  p2 == 3 || p3 == 1 || p4 == 0 || p5 == 2) {
@@ -126,10 +126,10 @@ route.post('/testPerfile', virifyToken,(req: Request, res: Response) => {
         res.render('pages/testPerfile', { 
             content: ` Tens Perfile para seguintes cursos Direito", Ciências Sociais, Turismo`
         })
-      }else if (p2 == 2 || p3 == 0 || p4 == 3 || p5 == 0){
+      }else if(p2 == 2 || p3 == 0 || p4 == 3 || p5 == 0){
        
         res.render('pages/testPerfile', { 
-            content: ` Tens Perfile para seguintes cursos Direito,Administração, Economia e negócios`
+            content: ` Tens Perfile para seguintes cursos Direito,Contabilidade,Administração, Economia e negócios`
         })
 
       }
@@ -138,7 +138,7 @@ route.post('/testPerfile', virifyToken,(req: Request, res: Response) => {
      
  
 
-      console.log(points)
+      
 
 /*
 
