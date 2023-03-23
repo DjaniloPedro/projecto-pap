@@ -88,6 +88,27 @@ route.get('/home',(req: Request, res: Response) => {
 
 
 route.get('/testPerfile', (req: Request, res: Response) => {
-
+    
+    res.render('pages/testPerfile',{
+         content: ''
+    })
 
 })
+
+
+route.post('/testPerfile', (req: Request, res: Response) => {
+
+      const {p1,p2,p3,p4,p5} = req.body 
+
+      let points: number 
+
+      if (p1 == 0) {
+         points += 20 
+      }
+
+    const ress = ` Você tens perfile com as seguintes cursos:  Jornalismo,Literatura,Educação   `
+ res.render('pages/testPerfile', { 
+     content: ress
+ }) 
+      
+} )

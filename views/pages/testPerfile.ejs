@@ -12,6 +12,73 @@
     <meta name="generator" content="Nicepage 5.6.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
+    <style>
+         
+       .container {
+          position: absolute;
+          padding:50px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          
+       }
+
+       #result {
+          
+           position: absolute;
+           top: 35em;
+           width: 500px;
+           background-color: rgb(41, 130, 146);
+           border-radius: 10px;
+           padding: 10px;
+           color: #fff;;
+       }
+
+       .grup {
+         
+          width:800px;
+          padding: 10px;
+          margin: 25px;
+          background-color: rgb(41, 130, 146);
+          border-radius: 5px;
+          
+
+       }
+
+       input[type="submit"] {
+          
+          width: 300px; 
+          margin: auto;
+          padding:10px;
+          border:none;
+          background: rgb(26, 180, 26);
+          border-radius: 12px;
+          color:#fff;
+       }
+       input[type="submit"]:hover {
+          
+        width: 300px; 
+        margin: auto;
+        padding:10px;
+        border:none;
+        background: rgba(9, 124, 9, 0.87);
+        border-radius: 12px;
+        color:#3b5b64;
+     }
+       select {
+          
+          border-radius: 12px;
+          border:none;
+          padding:2px;
+       }
+
+       label {
+
+          color:#fff;
+       }
+
+
+    </style>
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -38,7 +105,6 @@
                         <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/education.png" alt="" data-image-width="512" data-image-height="512">
                       </div>
                     </div>
-                    <a href="#" class="u-border-2 u-border-active-palette-4-dark-2 u-border-hover-palette-4-dark-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-none u-radius-0 u-text-active-palette-4-dark-1 u-text-hover-palette-4-dark-1 u-text-palette-4-dark-2 u-top-left-radius-0 u-top-right-radius-0 u-btn-1">Fazer o teste de perfil</a>
                   </div>
                 </div>
               </div>
@@ -71,7 +137,87 @@
                 <div class="u-size-NaN">
                   <div class="u-layout-col">
                     <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-3">
-                      <div class="u-border-2 u-border-no-bottom u-border-no-right u-border-no-top u-border-palette-4-dark-2 u-container-layout u-container-layout-6"></div>
+                      <div class="u-border-2 u-border-no-bottom u-border-no-right u-border-no-top u-border-palette-4-dark-2 u-container-layout u-container-layout-6">
+                    
+
+                        <div class="container">
+                             
+                              <form action="/testPerfile" method="post">
+                                   
+                                <div class="grup"> 
+                                 <label for="p1">O que você gosta de fazer no seu tempo livre?</label>
+                                 
+                                  <select name="p1" id="p1">
+                                    <option value="0">Ler e escrever</option>
+                                   <option value="1">Praticar esportes</option>
+                                    <option value="2">Tocar um instrumento</option>
+                                     <option value="3">Resolver problemas</option>
+                                  </select>
+                              
+                                </div>
+
+                                <div class="grup"> 
+                                 <label for="p2">Quais são as matérias que você mais gosta na escola?</label>
+                                 
+                              
+                                  <select name="p2" id="p2">
+                                      <option value="0">Português e Literatura</option>
+                                      <option value="1">Biologia e Química</option>
+                                     <option value="2">História e Geografia</option>
+                                     <option value="3">Física e Matemática</option>
+                                  </select>
+
+                                </div>
+                                 
+                                <div class="grup"> 
+                                 <label for="p3">Como você se relaciona com as outras pessoas?</label>
+                                 <select name="p3" id="p3">
+                                     <option value="0">Sou extrovertido e comunicativo</option>
+                                   <option value="1">Sou introvertido e reservado</option>
+                                 </select>
+                                </div>
+
+                                <div class="grup"> 
+                                  <label for="p4">Quais são as suas habilidades e interesses?</label>
+                                  <select name="p4" id="p4">
+                                      <option value="0">Eu tenho habilidade para lidar com números, lógica e raciocínio</option>
+                                    <option value="1">Eu tenho habilidade para me comunicar, escrever e argumentar</option>
+                                    <option value="2">Eu tenho habilidade para cuidar de pessoas, animais e plantas</option>
+                                    <option value="3">Eu tenho habilidade para organizar, planejar e liderar</option>
+                                  </select>
+                                 </div>
+
+                                 <div class="grup"> 
+                                  <label for="p5">Prefiro lidar diretamente com pessoas ou com coisas?</label>
+                                  <select name="p5" id="p5">
+                                      <option value="0">Prefiro lidar diretamente com pessoas</option>
+                                    <option value="1">Prefiro lidar diretamente com coisas</option>
+                
+                                  </select>
+                                 </div>
+
+                                 
+                                 <input type="submit" value="Fazer o test">
+
+                                 
+
+                                
+
+                                 
+
+                              </form>
+
+                            
+
+                              <div id="result">
+                              <%= content  %>
+                              </div>
+                             
+                            
+                        </div>
+                       
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -130,7 +276,9 @@
                 <div class="u-container-layout u-container-layout-4"><!--position-->
                   <div data-position="" class="u-position u-position-4"><!--block-->
                     <div class="u-block">
-                      <div class="u-block-container u-clearfix"></div>
+                      <div class="u-block-container u-clearfix"> 
+                        
+                         </div>
                     </div><!--/block-->
                   </div><!--/position-->
                 </div>
